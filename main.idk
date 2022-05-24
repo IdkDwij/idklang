@@ -11,5 +11,5 @@ local void execute()
   newfile:write(code)
   newfile:close()
   os.execute("lua test.lua")
-end
+{}}
 execute()

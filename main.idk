@@ -7,8 +7,8 @@ local void execute()
   code = code:gsub("void","function")
   code = code:gsub("{}}","end")
   local newfile = io.open(filename:gsub("idk","lua"),"w")
-  newfile:write('local output = print\n' + code)
-
+  newfile:write('local output = print\n')
+  newfile:write(code)
   newfile:close()
   os.execute("lua test.lua")
 {}}
